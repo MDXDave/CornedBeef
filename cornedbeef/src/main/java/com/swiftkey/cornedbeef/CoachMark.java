@@ -203,7 +203,11 @@ public abstract class CoachMark {
         mAnchor.getViewTreeObserver().removeOnPreDrawListener(mPreDrawListener);
         mPopup.getContentView().removeCallbacks(mTimeoutDismissRunnable);
 
-        mPopup.dismiss();
+        try {
+            mPopup.dismiss();
+        }catch(Exception e)
+            
+        }
 
         if (mDismissListener != null) {
             mDismissListener.onDismiss();
