@@ -205,7 +205,7 @@ public abstract class CoachMark {
 
         try {
             mPopup.dismiss();
-        }catch(Exception e)
+        }catch(Exception e){
             
         }
 
