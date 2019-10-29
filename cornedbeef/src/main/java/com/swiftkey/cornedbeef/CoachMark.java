@@ -174,7 +174,7 @@ public abstract class CoachMark {
                         }
                         try {
                             dismiss();
-                        } catch(IllegalArgumentException e) {
+                        } catch(Exception e) {
                             // Closes #19 - popup has already been removed outside of CornedBeef's
                             // control
                         }
